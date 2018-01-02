@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+
+    </style>
+
+    <style name="MainStyle">
+        <item name="android:textColor">
+            @android:color/white
+        </item>
+        <item name="android:layout_marginBottom">
+            10dp
+        </item>
+
+        <item name="android:layout_height">
+            0dp
+        </item>
+        <item name="android:layout_width">
+            fill_parent
+        </item>
+        <item name="android:textSize">
+            20sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+
+    <style name="StyleAbout">
+        <item name="android:textColor">
+            @android:color/black
+        </item>
+        <item name="android:textSize">
+            15sp
+        </item>
+        <item name="android:textStyle">
+            italic
+        </item>
+        <item name="android:background">
+            @color/Lime
+        </item>
+
+    </style>
+
+    <style name="Numberstwo">
+        <item name="android:scaleType">
+            fitCenter
+        </item>
+        <item name="android:background">
+            @android:color/transparent
+        </item>
+    </style>
+
+    <style name="background">
+        <item name="android:background">
+            @color/BackPurple
+        </item>
+    </style>
+
+
+
+
+</resources>

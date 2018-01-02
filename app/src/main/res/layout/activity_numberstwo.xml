@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.example.niso.bitir.Numberstwo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeightSmall"
+        android:background="@color/Orange"
+        android:layout_marginBottom="10dp" >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="Numbers Section #2"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/textView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/btn_one"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playOne"
+                android:src="@drawable/one"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btn_two"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playTwo"
+                android:src="@drawable/two"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btn_three"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playThree"
+                android:src="@drawable/three" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/btn_four"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playFour"
+                android:src="@drawable/four"
+
+
+                />
+
+            <ImageButton
+                android:id="@+id/btn_five"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playFive"
+                android:src="@drawable/five"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btn_six"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playSix"
+                android:src="@drawable/six"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/btn_seven"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playSeven"
+                android:src="@drawable/seven" />
+
+            <ImageButton
+                android:id="@+id/btn_eight"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playEight"
+                android:src="@drawable/eight" />
+
+            <ImageButton
+                android:id="@+id/btn_nine"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="playNine"
+                android:src="@drawable/nine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/btn_zero"
+                style="@style/Numberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="playZero"
+                android:src="@drawable/zero" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:maxLength="9"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Delete" />
+
+            <ImageButton
+                android:id="@+id/playnumberstwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:focusable="false"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

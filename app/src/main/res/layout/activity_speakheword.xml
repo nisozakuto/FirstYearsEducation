@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context="zakuto.firstyearseducation.SpeakTheWord">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Enter the text you want to hear:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/ttstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="8"
+        android:text="Write here..."
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/ttsbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="Done" />
+
+
+</LinearLayout>

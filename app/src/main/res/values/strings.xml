@@ -1,0 +1,55 @@
+<resources>
+    <string name="banner_ad_unit_id">pub-1203930631718274 </string>
+
+    <string name="app_name">Discovery Project</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="MainTitle">Home Page</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_numbers">Numbers</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_letters">Letters</string>
+    <string name="loadapic">Load A Pic</string>
+    <string name="Letters">Letters</string>
+    <string name="Numbers">Sayılar</string>
+    <string name="Title">Başlık</string>
+    <string name="title_activity_image">Image</string>
+    <string name="NextPage">Next Page</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="Exiting">Exiting</string>
+    <string name="Image">Image</string>
+    <string name="title_activity_numberstwo">Numberstwo</string>
+    <string name="readthetext">Enter a sentence to hear it</string>
+    <string name="listen">Listen</string>
+    <string name="discover">Discover the Alphabet</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+    <string name="endofgame">Game has ended.</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_quiz_numbers">QuizNumbers</string>
+    <string name="title_activity_quiz_number">QuizNumber</string>
+    <string name="title_activity_numbers_main">NumbersMain</string>
+    <string name="title_activity_speak_the_word">SpeakTheWord</string>
+
+
+    //Renkler
+    <color name="lightPink">#F8E0F7</color>
+    <color name="Azure">#82CAFF</color>
+    <color name="LighterBlue">#B4FCFF</color>
+    <color name="Red">#CC0000</color>
+    <color name="Lime">#99FF00</color>
+    <color name="Orange">#FFCC00</color>
+    <color name="Blue">#3333FF</color>
+    <color name="Purple">#6600CC</color>
+    <color name="BackPurple">#F3E1FF</color>
+    <color name="MediumPurple">#ECD0FF</color>
+    <color name="DarkerPurpleone">#D598FF</color>
+    <string-array name="about">
+        <item>Dsicovery Project</item>
+        <item>Version 0.23</item>
+        <item>Developers and credits:</item>
+        <item>This app could not be done without the help of my friends, hereos of stackflow.com, and many more</item>
+        <item>All rights reserved &#169; 2015 </item>
+    </string-array>
+
+</resources>
