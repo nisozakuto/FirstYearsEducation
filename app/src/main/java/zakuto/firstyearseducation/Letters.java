@@ -28,7 +28,7 @@ public class Letters extends Activity implements TextToSpeech.OnInitListener {
             m = "m", n = "n", o = "o",
             p = "p", q = "q", r = "r",
             s = "s", t = "t", u = "u",
-            v = "v", w = "w", y = "y", x="x",
+            v = "v", w = "w", y = "y", x = "x",
             z = "z", iyazi;
     EditText girilenyazi;
     TextView alphabet;
@@ -58,6 +58,7 @@ public class Letters extends Activity implements TextToSpeech.OnInitListener {
             R.drawable.u,
             R.drawable.v,
             R.drawable.w,
+            R.drawable.x,
             R.drawable.y,
             R.drawable.z,
     };
@@ -80,7 +81,6 @@ public class Letters extends Activity implements TextToSpeech.OnInitListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letters);
         tts = new TextToSpeech(this, this);
-
 
         ImageButton play_a = (ImageButton) findViewById(R.id.btn_a);
         ImageButton play_b = (ImageButton) findViewById(R.id.btn_b);
@@ -110,14 +110,15 @@ public class Letters extends Activity implements TextToSpeech.OnInitListener {
 
         ImageButton play_v = (ImageButton) findViewById(R.id.btn_v);
         ImageButton play_w = (ImageButton) findViewById(R.id.btn_w);
+        ImageButton play_x = (ImageButton) findViewById(R.id.btn_x);
         ImageButton play_y = (ImageButton) findViewById(R.id.btn_y);
         ImageButton play_z = (ImageButton) findViewById(R.id.btn_z);
 
 
         play_a.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
-               // tts.speak(a.toString(), TextToSpeech.QUEUE_FLUSH, null);
-            speakOut(a);
+                // tts.speak(a.toString(), TextToSpeech.QUEUE_FLUSH, null);
+                speakOut(a);
             }
         });
         play_b.setOnClickListener(new View.OnClickListener() {
@@ -240,7 +241,7 @@ public class Letters extends Activity implements TextToSpeech.OnInitListener {
                 speakOut(w);
             }
         });
-        play_y.setOnClickListener(new View.OnClickListener() {
+        play_x.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
                 speakOut(x);
             }
@@ -250,7 +251,6 @@ public class Letters extends Activity implements TextToSpeech.OnInitListener {
                 speakOut(y);
             }
         });
-
         play_z.setOnClickListener(new View.OnClickListener() {
             public void onClick(View V) {
                 speakOut(z);
@@ -279,8 +279,6 @@ public class Letters extends Activity implements TextToSpeech.OnInitListener {
             if (result == TextToSpeech.LANG_MISSING_DATA
                     || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This Language is not supported");
-            } else {
-                //speakOut();
             }
 
         } else {
@@ -289,7 +287,7 @@ public class Letters extends Activity implements TextToSpeech.OnInitListener {
     }
 
     private void speakOut(String letters) {
-        letters.toString();
+        //letters.toString();
         tts.speak(letters, TextToSpeech.QUEUE_FLUSH, null);
     }
 
